@@ -78,21 +78,25 @@ $(document).ready(function(){
 
   $("#form-submit").click(function( e ) {
 
-    var radioValue1 = $('input:radio[name=check_in]:checked').val();
+    var radioValue2 = $('input:radio[name=visit]:checked').val();
     //alert(radioValue);
-    if (radioValue1==null) {
-      alert("Please Select from 1 to 5.");
+    if (radioValue2==null) {
+      alert("Please Select an option1.");
       $("#visit").focus();
       return false;
     }
-    
-    ShowPopup();
-    /*$("#contactForm")[0].reset();
+    if($("#email").val()=="")
+    {
+      alert("Please type your response.");
+      $("#email").focus();
+      return false;
+    }
+    //ShowPopup();
+    $("#contactForm")[0].reset();
                   $('#form-success').show();
-                  $( "#form-success" ).delay( 10000 ).fadeOut( 400 );*/
+                  $( "#form-success" ).delay( 10000 ).fadeOut( 400 );
    
     });
-});
   $("#form-submit1").click(function(){
     if($("#email").val()== "")
     {
@@ -110,7 +114,7 @@ $(document).ready(function(){
       $("#email").focus();
       return false;
     }
-    e.preventDefault();
+    //e.preventDefault();
 
             var $action = $('#contactForm').prop('action');
             var $data = $('#contactForm').serialize() + '&email=' + $("#email").val();
@@ -118,7 +122,7 @@ $(document).ready(function(){
 
             $this.prevAll('.alert').remove();
 
-            /*$.post( $action, $data, function( data ) {
+            $.post( $action, $data, function( data ) {
 
                 if( data.response=='error' ){
 
@@ -134,7 +138,7 @@ $(document).ready(function(){
                   //setTimeout(hideSuccessMessage(), 20000);
 
                 }
-            }, "json");*/
+            }, "json");
 
 
        

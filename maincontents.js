@@ -40,6 +40,11 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/Showcase/index.html";
             //PlaySpeech(speak[1]);
             break;
+        case "Feedback":
+            location.href = "../../Contents/Showcase/index.html";
+            //PlaySpeech(speak[1]);
+            break;
+            
         case "Faq":
             location.href = "Contents/Faq/index.html";
             //PlaySpeech(speak[1]);
