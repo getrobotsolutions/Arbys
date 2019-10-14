@@ -14,6 +14,8 @@
 @font-face {
     font-family: LeagueGothic;
     src: url('Fonts/leaguegothic-regular-webfont.eot');
+    /*src: local('☺'), 
+       url('Fonts/LeagueGothic-Regular.otf') format('opentype'); */
 }
 a{
 	color: white;
@@ -40,7 +42,8 @@ header
 nav{
 	/*margin-top: 15px ;*/
 	height: 60px;
-	background-color: #230000;
+	background-color: black;
+	color: black;
 }
 header .logo {
 	text-align: center;
