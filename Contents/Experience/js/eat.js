@@ -76,8 +76,8 @@ $(document).ready(function(){
     HideKeyboard();
   });
 
-  $("#form-submit").click(function( e ) {
-
+  $(".btn1").click(function( e ) {
+    e.preventDefault();
     var radioValue1 = $('input:radio[name=check_in]:checked').val();
     //alert(radioValue);
     if (radioValue1==null) {
@@ -87,13 +87,10 @@ $(document).ready(function(){
     }
     
     ShowPopup();
-    /*$("#contactForm")[0].reset();
-                  $('#form-success').show();
-                  $( "#form-success" ).delay( 10000 ).fadeOut( 400 );*/
-   
-    });
-});
+  
+  });
   $("#form-submit1").click(function(){
+    e.preventDefault();
     if($("#email").val()== "")
     {
       alert("Please enter a valid email address.");
