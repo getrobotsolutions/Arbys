@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+    
+
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="css/eat.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+
+</head>
+
+
+<body >
+
+<header >
+    <div class="logo">
+        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
+    </div>
+    
+</header>
+
+<nav>
+    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" ></span>
+    
+</nav>
+
+<section class="main-content" style="">
+
+    <div class="bmg" style="">
+      <h1 class="title">PLEASE RATE YOUR EXPERIENCE FROM 1-5, 5 BEHING THE HIGHEST</h1>
+        <div class="header-w3ls">
+          </div>
+      <!-- multistep form -->
+      <div class="main-bothside">
+        <form action="http://robotaisolutions.com/robot-work/mitsubishi-survey-form-data.php" method="post" id="contactForm">
+            <!--<div class="form-group">
+              <div class="personal-info">
+                <p>CHECK IN</p>
+                <fieldset class="rating">   
+                  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                </fieldset>
+              </div>
+            </div>-->
+            <div class="form-group">
+              <div class="personal-info">
+                <p>CHECK IN</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="1">
+                  <label class="form-check-label">
+                  1
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="2">
+                  <label class="form-check-label">
+                  2
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="3">
+                  <label class="form-check-label">
+                  3
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="4">
+                  <label class="form-check-label">
+                  4
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="5">
+                  <label class="form-check-label">
+                  5
+                  </label>
+                </div>
+              </div>
+            </div>
+           
+            <div class="form-group">
+              <div class="personal-info">
+                <p>GENERAL SESSION</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="1">
+                  <label class="form-check-label">
+                  1
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="2">
+                  <label class="form-check-label">
+                  2
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="3">
+                  <label class="form-check-label">
+                  3
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="4">
+                  <label class="form-check-label">
+                  4
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="5">
+                  <label class="form-check-label">
+                  5
+                  </label>
+                </div>  
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="personal-info">
+                <p>CRAFT HALL</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="1">
+                  <label class="form-check-label">
+                  1
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="2">
+                  <label class="form-check-label">
+                  2
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="3">
+                  <label class="form-check-label">
+                  3
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="4">
+                  <label class="form-check-label">
+                  4
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="5">
+                  <label class="form-check-label">
+                  5
+                  </label>
+                </div>  
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="personal-info">
+                <p>BREAKOUT SESSION</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="1">
+                  <label class="form-check-label">
+                  1
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="2">
+                  <label class="form-check-label">
+                  2
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="3">
+                  <label class="form-check-label">
+                  3
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="4">
+                  <label class="form-check-label">
+                  4
+                  </label>
+                  <input class="form-check-input" type="radio" name="check_in" id="" value="5">
+                  <label class="form-check-label">
+                  5
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+            
+            <div class="form-group">            
+              <button type="" id="form-submit" class="btn1" required="" value="SUBMIT" name="">SUBMIT</button>
+            </div>
+         <div id="form-success">Thank You for taking part in Survey</div>
+
+          </form>
+          
+      </div>
+    </div>
+<div id="keyboard" class="keyboard" style="display: none">
+          <div class="top">
+            <font class="address" size="6px"><a id="address" onmousedown="return false"></a></font>
+            <img src="Images/keyboard/send.png" onclick="" id="ConfirmInput"> &nbsp;
+            <img src="Images/keyboard/cancel.png" onclick="HideKeyboard()">
+          </div>
+          <div class="wrap" >
+            <div class="line01">
+              <img src="Images/keyboard/1.png" onclick="keyboard('1')">
+              <img src="Images/keyboard/2.png" onclick="keyboard('2')">
+              <img src="Images/keyboard/3.png" onclick="keyboard('3')">
+              <img src="Images/keyboard/4.png" onclick="keyboard('4')">
+              <img src="Images/keyboard/5.png" onclick="keyboard('5')">
+              <img src="Images/keyboard/6.png" onclick="keyboard('6')">
+              <img src="Images/keyboard/7.png" onclick="keyboard('7')">
+              <img src="Images/keyboard/8.png" onclick="keyboard('8')">
+              <img src="Images/keyboard/9.png" onclick="keyboard('9')">
+              <img src="Images/keyboard/0.png" onclick="keyboard('0')">
+              <img src="Images/keyboard/delete.png" onclick="keyboard('bs')">
+            </div>
+
+            <div class="line02">
+              <img src="Images/keyboard/q.png" onclick="keyboard('q')">
+              <img src="Images/keyboard/w.png" onclick="keyboard('w')">
+              <img src="Images/keyboard/e.png" onclick="keyboard('e')">
+              <img src="Images/keyboard/r.png" onclick="keyboard('r')">
+              <img src="Images/keyboard/t.png" onclick="keyboard('t')">
+              <img src="Images/keyboard/y.png" onclick="keyboard('y')">
+              <img src="Images/keyboard/u.png" onclick="keyboard('u')">
+              <img src="Images/keyboard/i.png" onclick="keyboard('i')">
+              <img src="Images/keyboard/o.png" onclick="keyboard('o')">
+              <img src="Images/keyboard/p.png" onclick="keyboard('p')">
+            </div>
+
+            <div class="enter" >
+              <img src="Images/keyboard/enter.png" onclick="HideKeyboard()">
+            </div>
+
+            <div class="line03">
+              <img src="Images/keyboard/a.png" onclick="keyboard('a')">
+              <img src="Images/keyboard/s.png" onclick="keyboard('s')">
+              <img src="Images/keyboard/d.png" onclick="keyboard('d')">
+              <img src="Images/keyboard/f.png" onclick="keyboard('f')">
+              <img src="Images/keyboard/g.png" onclick="keyboard('g')">
+              <img src="Images/keyboard/h.png" onclick="keyboard('h')">
+              <img src="Images/keyboard/j.png" onclick="keyboard('j')">
+              <img src="Images/keyboard/k.png" onclick="keyboard('k')">
+              <img src="Images/keyboard/l.png" onclick="keyboard('l')">
+            </div>
+
+            <div class="line04">
+              <img src="Images/keyboard/z.png" onclick="keyboard('z')">
+              <img src="Images/keyboard/x.png" onclick="keyboard('x')">
+              <img src="Images/keyboard/c.png" onclick="keyboard('c')">
+              <img src="Images/keyboard/v.png" onclick="keyboard('v')">
+              <img src="Images/keyboard/b.png" onclick="keyboard('b')">
+              <img src="Images/keyboard/n.png" onclick="keyboard('n')">
+              <img src="Images/keyboard/m.png" onclick="keyboard('m')">
+              <img src="Images/keyboard/..png" onclick="keyboard('.')">
+              <img src="Images/keyboard/exclamation.png" onclick="keyboard('!')">
+              <img src="Images/keyboard/question.png" onclick="keyboard('?')">
+            </div>
+
+            <div class="line05">
+              <img src="Images/keyboard/-.png" onclick="keyboard('-')">
+              <img src="Images/keyboard/_.png" onclick="keyboard('_')">
+              <img src="Images/keyboard/spacebar.png" onclick="keyboard(' ')">
+              <img src="Images/keyboard/@.png" onclick="keyboard('@')">
+              <img src="Images/keyboard/gmail.png" onclick="keyboard('gmail.com')">
+              <img src="Images/keyboard/com.png" onclick="keyboard('.com')">
+            </div>
+          </div>
+        </div>
+</section>
+
+<footer>
+<!--<img src="../../assets/footer.png" width="1080">-->
+</footer>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+</div>
+<div id="dialog-overlay1"></div>
+<div id="dialog-box1">
+  <a href="#" class="button ok">Close</a>
+  <div class="dialog-content1">
+    <div id="dialog-message1">
+      <!--<div class="form-mid-w3ls">
+        <p>Enter your email for a chance to win  an $100 Amazon gift card.</p>
+        <input type="email" class="form-control" name="email" id="email" required="">
+      </div>
+      <div class="form-mid-w3ls">
+        <br>
+        <button type="submit" id="form-submit1" class="btn1" required="" value="SUBMIT" name="">SUBMIT</button>
+      </div>-->
+    </div>
+  </div>
+</div>
+  
+</body>
+<script type="application/javascript">
+  
+</script>
+
+<script language="JavaScript" type="text/javascript" src="js/eat.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+
+<style type="text/css">
+    ul{list-style-type: none;}
+    .title{
+    font-size: 80px;
+    background-color: #ffff;
+    border: 10px solid #230000;
+    margin: 0 auto;
+    width: 900px;
+    /* font-weight: bold; */
+    text-align: center;
+    padding: 30px;
+  }
+
+
+/*.rating {
+    float:left;
+}*/
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+/*.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:90px;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}*/
+
+</style>
+
+</html>
