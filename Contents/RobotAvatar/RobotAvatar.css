@@ -26,6 +26,7 @@ body {
 .main{
 	background-color: #d71a20;
     min-height: 1005px;
+	height: 100%;
 	padding-top:0 40px;
 overflow: hidden;}
 
