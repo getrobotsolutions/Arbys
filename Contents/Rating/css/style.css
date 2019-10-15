@@ -34,17 +34,7 @@ min-height: 100vh;
 .form-mid-w3ls{
   flex-basis:48%;
 -webkit-flex-basis:48%;}
-.main-bothside {
-border: 10px solid #230000;
-    margin: 0 auto;
-    width: 900px;
-padding:2em 2em 2em;
-margin: 0em auto;
--webkit-box-shadow:-2px 7px 37px 8px rgba(0, 0, 0, 0.2);
--moz-box-shadow:-2px 7px 37px 8px rgba(0, 0, 0, 0.2);
-box-shadow:-2px 7px 37px 8px rgba(0, 0, 0, 0.2);
-background:#fff;
-}
+
 .personal-info p, label.form-check-label, .form-control-w3l p,.form-mid-w3ls p {
 font-size: 30px;
 color: #000;
@@ -148,32 +138,66 @@ background: #000;
 input[type=radio] ,input[type=checkbox]{
 width: 70px;
 height: 70px;
-position: absolute;
+position: relative;
   }
 
   label.form-check-label{
-    line-height: 46px;
+        line-height: 46px;
     padding-bottom: 0px;
-    padding-left: 50px;
-  }
+    /* padding-left: 50px; */
+    font-size: 50px;
+    width: 300px;
+    text-align: right;
+        padding-right: 30px;  }
   .form-text{
     background:transparent !important;
     border-color: #000 !important; 
     color: #646464 !important;
   }
-  label.form-check-label {
-    position: relative;
-    top: -35px;
-    left: -22px;
-  }
+  
   .form-check span{
-    display: inline-block;
-    width: 100px;
+    display: block;
+    height: 120px;
+    padding: 15px 0;
   }
   .form-group{
     margin-bottom: 30px;
   }
-  input[type="email"]{
+
+      ul{list-style-type: none;}
+    .title{
+    font-size: 80px;
+    background-color: white;
+    border: 10px solid #230000;
+    margin: 0 auto;
+    width: 900px;
+    /* font-weight: bold; */
+    text-align: center;
+    padding: 30px;
+  }
+  .main-content{
+  
+   background-color: white;
+  }
+  .bmg{
+    padding: 0 80px;
+  }
+  #contactForm{
+    width: 500px;
+    float: left;
+
+  }
+.img-right{
+  background-color: #d71a20;
+  width: 400px;
+  height: 400px;
+  float: right;
+  padding: 50px;
+  position: relative;
+  top: 200px;
+}
+
+input[type="email"]{
   width: 500px !important;
     height: 90px;
   font-size: 25px;

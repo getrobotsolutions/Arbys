@@ -76,18 +76,18 @@ $(document).ready(function(){
     HideKeyboard();
   });
 
-  $("#form-submit").click(function( e ) {
+  //$("input[]").click(function( e ) {
+$('input:radio[name="rating"]').change(function(e){
 
-
-    var check_in = $('input:radio[name=check_in]:checked').val();
+    var rating = $('input:radio[name=rating]:checked').val();
     //alert(radioValue);
-    if (check_in==null) {
+    if (rating==null) {
       alert("Please Select an option1.");
       //$("#visit").focus();
       return false;
     }
 
-    var general = $('input:radio[name=general]:checked').val();
+    /*var general = $('input:radio[name=general]:checked').val();
     //alert(radioValue);
     if (general==null) {
       alert("Please Select an option2.");
@@ -140,7 +140,7 @@ $(document).ready(function(){
     
 
             var $action = $('#contactForm').prop('action');
-            var $data = $('#contactForm').serialize() + '&email=' + $("#email").val();
+            var $data = $('#contactForm').serialize() + '&email=' + $("#email").val() + '&item_name=' + item_name;
             var $this = $('#contactForm');
 
             $this.prevAll('.alert').remove();
@@ -183,7 +183,7 @@ function ShowPopup(src){
   var dialogLeft = (maskWidth/2) - ($('#dialog-box1').width()/2); 
   
   // assign values to the overlay and dialog box
-  //$('#dialog-overlay1').css({height:maskHeight, width:maskWidth}).show();
+  $('#dialog-overlay1').css({height:maskHeight, width:maskWidth}).show();
   $('#dialog-box1').css({top:dialogTop, left:dialogLeft}).show();
   
 
