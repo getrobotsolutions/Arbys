@@ -11,12 +11,12 @@
         jokes[9]="Want to know my favorite dance? It’s the robot";
 
         var speak = new Array( );
-        speak[0] = "";
+        speak[0] = "ask me a question.";
         speak[1] = "Take a picture with me.";
         speak[2] = "Pick a song and let's boogie.";
         speak[3] = "Become a robot.";
         speak[4] = "see our pictures from today on our slack channel";
-        speak[5] = "";
+        speak[5] = "rate your experience.";
 
 //window.external.ChangeLanguage("en-us");
 function FC_ContentsCall(strContentsName, strLanguage)
@@ -34,7 +34,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
            break;
         case "Experience":
             location.href = "Contents/Experience/index.html";
-            //PlaySpeech(speak[1]);
+            PlaySpeech(speak[5]);
             break;
         case "Showcase":
             location.href = "Contents/Showcase/index.html";
@@ -47,7 +47,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             
         case "Faq":
             location.href = "Contents/Faq/index.html";
-            //PlaySpeech(speak[1]);
+            PlaySpeech(speak[0]);
             break;
 
         case "Selfie":
@@ -155,4 +155,27 @@ $(document).ready(function(){
 
 
 });
+
+
+function OnJoystickControlled(strPara){
+    var btn_info = strPara.split(',')[4];
+
+
+    if(btn_info[0] == '1'){
+        PlaySpeech("welcome to Arby's Inspiration and Innovation Conference.");
+    }
+
+    if(btn_info[1] == '1'){
+        //PlaySpeech("Hi! my name is Francesca, I am here to help. ");
+    }
+
+    if(btn_info[2] == '1'){
+        //PlaySpeech("Take a selfie with me.");
+    }
+
+    if(btn_info[3] == '1'){
+        //PlaySpeech("Bye, bye.");
+    }
+
+}
 
