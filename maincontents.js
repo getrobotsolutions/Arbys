@@ -166,15 +166,15 @@ function OnJoystickControlled(strPara){
     }
 
     if(btn_info[1] == '1'){
-        //PlaySpeech("Hi! my name is Francesca, I am here to help. ");
+        PlaySpeech("The product tasting begins at 12:30 pm and ends at 2:00 pm in the Arby’s Craft Hall, located on Level 3.");
     }
 
     if(btn_info[2] == '1'){
-        //PlaySpeech("Take a selfie with me.");
+        PlaySpeech("Monday at 9:00 pm");
     }
 
     if(btn_info[3] == '1'){
-        //PlaySpeech("Bye, bye.");
+        PlaySpeech("Yes, it departs the 5th Avenue entrance of the Omni hotel starting at 6:45 pm");
     }
 
 }
