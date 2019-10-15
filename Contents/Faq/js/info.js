@@ -5,11 +5,11 @@
 function redirect(){
   //window.location.href = "../../maincontents.htm";
 }
-var initial=setTimeout(redirect,75000);
+var initial=setTimeout(redirect,750000);
 
 $(document).click(function(event) {
     clearTimeout( initial );
-    initial=setTimeout(redirect,75000);
+    initial=setTimeout(redirect,750000);
 });
 //-----------------------------------------------------
 
